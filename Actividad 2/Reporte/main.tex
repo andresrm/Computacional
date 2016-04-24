@@ -1,0 +1,226 @@
+\documentclass[11pt,spanish]{article}
+
+\usepackage{listings}             
+\usepackage{anysize} 
+\usepackage{graphicx}
+\usepackage[spanish]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{xcolor}
+\usepackage{wrapfig}
+\renewcommand\lstlistingname{Código}
+
+
+\lstset{language=Python}
+\marginsize{1cm}{1cm}{2cm}{2cm}
+\selectlanguage{spanish}
+\lstset{
+language=Python,
+ backgroundcolor=\color{red!75!green!50!blue!25},
+ frame=single,
+literate=
+  {á}{{\'a}}1 {é}{{\'e}}1 {í}{{\'i}}1 {ó}{{\'o}}1 {ú}{{\'u}}1
+  {Á}{{\'A}}1 {É}{{\'E}}1 {Í}{{\'I}}1 {Ó}{{\'O}}1 {Ú}{{\'U}}1
+  {à}{{\`a}}1 {è}{{\`e}}1 {ì}{{\`i}}1 {ò}{{\`o}}1 {ù}{{\`u}}1
+  {À}{{\`A}}1 {È}{{\'E}}1 {Ì}{{\`I}}1 {Ò}{{\`O}}1 {Ù}{{\`U}}1
+  {ä}{{\"a}}1 {ë}{{\"e}}1 {ï}{{\"i}}1 {ö}{{\"o}}1 {ü}{{\"u}}1
+  {Ä}{{\"A}}1 {Ë}{{\"E}}1 {Ï}{{\"I}}1 {Ö}{{\"O}}1 {Ü}{{\"U}}1
+  {â}{{\^a}}1 {ê}{{\^e}}1 {î}{{\^i}}1 {ô}{{\^o}}1 {û}{{\^u}}1
+  {Â}{{\^A}}1 {Ê}{{\^E}}1 {Î}{{\^I}}1 {Ô}{{\^O}}1 {Û}{{\^U}}1
+  {œ}{{\oe}}1 {Œ}{{\OE}}1 {æ}{{\ae}}1 {Æ}{{\AE}}1 {ß}{{\ss}}1
+  {ű}{{\H{u}}}1 {Ű}{{\H{U}}}1 {ő}{{\H{o}}}1 {Ő}{{\H{O}}}1
+  {ç}{{\c c}}1 {Ç}{{\c C}}1 {ø}{{\o}}1 {å}{{\r a}}1 {Å}{{\r A}}1
+  {€}{{\EUR}}1 {£}{{\pounds}}1
+}
+
+
+\title{\vspace{-3cm}\begin{flushleft}\textbf{Actividad 2}\end{flushleft}}
+\author{\hspace{-9.6cm}\textsc{Andrés Ignacio Rodríguez Mendoza}}
+\date{}
+
+\begin{document}
+
+\begin{wrapfigure}{r}{0.2\textwidth}
+  \begin{center}
+   \vspace{-5.4cm} \includegraphics[width=0.15\textwidth]{uni}
+  \end{center}
+\end{wrapfigure}
+
+\maketitle
+\begin{center}
+\rule{\textwidth}{1pt}
+\end{center}
+
+La sencilla sintaxis del lenguaje de programación Python, favorece la lectura del código. Este lenguaje soporta orientación a objetos, programación imperativa y programación funcional.
+Posee licencia de código abierto, llamada Python Software Foundation License.\\ \\
+La presente práctica requiere modificar y correr diversos códigos en Python para comprender su dinámica y aprender algunos comandos.\\
+
+
+\begin{lstlisting}
+import this
+\end{lstlisting} 
+
+\begin{tabular}{|l}
+\begin{minipage}{3in}
+
+\begin{verbatim}
+The Zen of Python, by Tim Peters
+
+Beautiful is better than ugly.
+Explicit is better than implicit.
+Simple is better than complex.
+Complex is better than complicated.
+Flat is better than nested.
+Sparse is better than dense.
+Readability counts.
+Special cases aren't special enough to break the rules.
+Although practicality beats purity.
+Errors should never pass silently.
+Unless explicitly silenced.
+In the face of ambiguity, refuse the temptation to guess.
+There should be one-- and preferably only one --obvious way to do it.
+Although that way may not be obvious at first unless you're Dutch.
+Now is better than never.
+Although never is often better than *right* now.
+If the implementation is hard to explain, it's a bad idea.
+If the implementation is easy to explain, it may be a good idea.
+Namespaces are one honking great idea -- let's do more of those!
+\end{verbatim}
+\end{minipage}
+\end{tabular} \\
+
+\section*{Códigos}
+\begin{lstlisting}[caption=caida.py] 
+
+import math 
+
+h = float(input("Proporciona la altura de la torre: "))
+
+t = sqrt(2*h/9.81)
+
+
+print("EL tiempo de caída es", t, "segundos")
+
+\end{lstlisting}
+
+
+
+\begin{lstlisting}[caption=altura.py] 
+
+import math
+
+G=6.67e-11
+M=5.97e24
+R=6371000
+pi=3.1416
+
+t= float(input("Periodo del satélite:"))
+T= t*60
+h=( (G*M*T*T) / (4*pi*pi) )**(1/3) - R
+
+print ("Altura del satélite:", h, "metros.")
+
+\end{lstlisting}
+
+
+\begin{lstlisting}[caption=altura.py] 
+
+import math
+
+G=6.67e-11
+M=5.97e24
+R=6371000
+pi=3.1416
+
+t= float(input("Periodo del satélite:"))
+T= t*60
+h=( (G*M*T*T) / (4*pi*pi) )**(1/3) - R
+
+print ("Altura del satélite:", h, "metros.")
+
+\end{lstlisting}
+
+
+
+\begin{lstlisting}[caption=Polar.py] 
+
+from math import sin,cos,pi
+
+r = float(input("Introduce r: "))
+
+d = float(input("Ingresa theta en grados: "))
+
+theta = d*pi/180
+
+x = r*cos(theta)
+
+y = r*sin(theta)
+
+print("x =",x," y =",y)
+
+\end{lstlisting}
+
+\begin{lstlisting}[caption=esfericas.py] 
+
+from math import sin,cos,pi
+
+r = float(input("Introduce r: "))
+
+d = float(input("Ingresa theta en grados: "))
+
+f = float(input("Ingresa phi en grados: "))
+
+theta = d*pi/180
+phi = f*pi/180 
+
+
+x = r*sin(theta)*cos(phi)
+
+y = r*sin(theta)*sin(phi)
+
+z = r*cos(theta)
+
+print("x =",x," y =",y, " z = ",z)
+
+\end{lstlisting}
+
+
+\begin{lstlisting}[caption=EvenOdd.py] 
+
+print("Enter two integers, one even, one odd.")
+m = int(input("Enter the first integer: "))
+n = int(input("Enter the second integer: "))
+while (m+n)%2==0:
+    print("One must be even and the other odd.")
+    m = int(input("Enter the first integer: "))
+    n = int(input("Enter the second integer: "))
+print("The numbers you chose are",m,"and",n)
+
+\end{lstlisting}
+
+\begin{lstlisting}[caption=Fibonacci.py] 
+
+f1,f2 = 1,1
+
+while f2<1000:
+
+      print(f2)
+
+      f1,f2 = f2,f1+f2
+      
+\end{lstlisting}
+
+\begin{lstlisting}[caption=Catalan.py] 
+
+n=0
+C=1
+
+while C<=1000000:
+
+      print(C)
+
+      C= C*2*(2*n+1)/(n+2)
+      n=n+1     
+      
+\end{lstlisting}
+
+\end{document}
