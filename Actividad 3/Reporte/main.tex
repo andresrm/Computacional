@@ -49,7 +49,12 @@ literate=
 \rule{\textwidth}{1pt}
 \end{center}
 
-$$\alpha$$
+\section*{Introducción}
+
+Los datos obtenidos de experimentación representan valores discretos de una función. De éstos, se requiere interpolar la función modelo para obtener los valores intermediós entre los datos originales.\\ \\
+En Python, la clase \textit{interp1d} de \textbf{scipy.interpolate} es un método para crear una función basada en un conjunto de datos fijos tal que pueda ser evaluada en cualquier punto dentro del dominio definido por los datos dados usando interpolación lineal.\\ \\
+La interpolación lineal, generalmente toma dos puntos de datos, y calcula la pentiente entre ellos tomando su valor como el coeficiente de la variable independiente en el intervalo de esos puntos.Las desventajas de ésta son que no es muy precisa y no es diferenciable en los puntos de los datos originales.\\ \\
+La interpolación polinomial es una generalización de la interpolación lineal. En ésta, se toma como modelo interpolante un polinomio de orden más alto que la lineal,por ser un polinomio es infinitamente diferenciable. Para obtener los coeficientes del polinomio se requiere de cálculo numérico.
 
 \section*{Código}
 
