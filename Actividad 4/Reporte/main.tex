@@ -48,8 +48,11 @@ literate=
 \begin{center}
 \rule{\textwidth}{1pt}
 \end{center}
+\section*{Introducción}
 
-$$ \alpha $$
+El análisis de regresión es un proceso estadístico para estimar las relaciones entre variables. Ayuda a entender como un valor típico de la variable dependiente cambia cuando cualquiera de las variables independientes es variada, mientras las otra permanecen fijas. Un procedimiento estandar es el de mínimos cuadrados, una solución aproximada a un sistema de ecuaciones que contiene más ecuaciones que incógnitas. La solución es la que minimiza la suma de los cuadrados de los errores hechos en el resultado de cada ecuación.\\ \\
+En esta práctica se presenta el ajuste de datos, la aplicación más importante de mínimos cuadrados. El ajuste minimiza la suma de los residuales cuadrados, siendo un residual la diferencia entre un valor observado y el dado por el modelo.\\ \\
+El paquete de scipy.optimize provee varios algoritmos de optimización comunmente usados. El módulo contiene a $scipy.optimize.least\_squares$, que resuelve un problema de minimos cuadrados no lineal con fronteras en las variables; y $scipy.optimize.curve\_fit$, wue usa el ajuste de minimos cuadrados no lineal para ajustar una función a los datos. En este código se reemplaza la funcion $scipy.optimize.least\_squares$ por $np.polyfit$, que obtiene los coeficientes de un polinomio $n$, con $n$ igual a $1$ en este caso.
 
 \section*{Código}
 
