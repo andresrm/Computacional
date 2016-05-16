@@ -49,8 +49,10 @@ literate=
 \begin{center}
 \rule{\textwidth}{1pt}
 \end{center}
-
-$$\alpha$$
+\section*{Introducción}
+En esta práctica se elaboran animaciones del espacio fase y el espacio físico para varias condiciones iniciales de un péndulo simple. Se utiliza como base el código de ejemplo del espacio físico de un péndulo doble.\\ \\
+El código del péndulo doble se modifica para convertirlo en un péndulo simple considerando que el péndulo doble se comporta como uno simple cuando la masa de la segunda partícula es igual a cero. Haciendo el cálculo para este valor, las ecuaciones del péndulo quedan desacopladas de la segunda partícula y para nuestros propósitos solo usamos los resultados correspondientes a la primera masa en la integración.\\ \\
+A la gráfica que se reproduce en la animación se le modifica para eliminar la segunda cuerda del péndulo y se agrega otra gráfica en la misma animación para simular el espacio fase con un punto trasladándose en las variables de la velocidad angular $\omega$ y el ángulo $\theta$ como coordenadas.
 
 \section*{Código}
 
@@ -184,11 +186,6 @@ ani.save('pendulum_%i_%s.mp4'%(th1,w1), fps=15)
 plt.show()
 
 \end{lstlisting}
-
-
-\section*{Gáficas}
-
-\centering
 
 
 

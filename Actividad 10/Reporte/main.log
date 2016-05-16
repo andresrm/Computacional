@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.4.19)  2 MAY 2016 06:27
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.4.19)  16 MAY 2016 08:23
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -467,19 +467,29 @@ Package wrapfig Warning: Stationary wrapfigure forced to float on input line 50
 .
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <10.95> on input line 53.
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 82.
+(Font)              <10.95> on input line 55.
+
+Underfull \hbox (badness 10000) in paragraph at lines 53--56
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 53--56
+
+ []
+
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 84.
 (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 82.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 84.
  [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./uni.png>] [2]
 LaTeX Font Info:    Font shape `OMS/cmr/m/it' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 175.
- [3] (./main.aux
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 177.
+ [3] [4] (./main.aux
 LaTeX Info: Redefining \. on input line 6.
 LaTeX Info: Redefining \% on input line 6.
 LaTeX Info: Redefining \. on input line 10.
@@ -492,7 +502,7 @@ Here is how much of TeX's memory you used:
  8426 multiletter control sequences out of 15000+600000
  9458 words of font info for 33 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 38i,7n,40p,243b,1763s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 38i,7n,40p,447b,1761s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></u
 sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/sha
 re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/te
@@ -500,10 +510,10 @@ xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-d
 ist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fo
 nts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on main.pdf (3 pages, 211113 bytes).
+Output written on main.pdf (4 pages, 213638 bytes).
 PDF statistics:
- 45 PDF objects out of 1000 (max. 8388607)
- 30 compressed objects within 1 object stream
+ 48 PDF objects out of 1000 (max. 8388607)
+ 32 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 
