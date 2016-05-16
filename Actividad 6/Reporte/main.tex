@@ -48,8 +48,27 @@ literate=
 \rule{\textwidth}{1pt}
 \end{center}
 
-$$\alpha$$
 
+\section*{Introducción}
+
+La ecuación diferencial se facilita considerando ángulos más pequeños que un radián, es decir, $\theta \ll  1$, por lo cual, $\sin \theta \approx \theta$. Reemplazando esto en la ecuación diferencial, queda,
+$$\frac{d^2\theta}{dt^2} + \frac{g}{l} \theta = 0.$$
+Dadas las condiciones iniciales $\theta (0) = \theta _ 0$ y $d\theta / dt (0) =0$, la solución es,
+$$\theta (t) = \theta _0 \cos \left( \sqrt{\frac{g}{l} t} \right)$$
+El movimiento es armónico simple, donde $\theta_0$ es la semiamplitud de oscilación. El periodo del movimiento es,
+$$T_0 = 2 \pi \sqrt{\frac{l}{g}}.$$
+Para amplitudes más grandes que la aproximación a ángulos pequeños, se puede calcular el periodo invirtiendo la ecuación de la velocidad angular,
+$$\frac{dt}{d\theta}=\frac{l}{2g} \frac{1}{\sqrt{\cos \theta - \cos \theta_0}}$$
+e integrando sobre un ciclo completo,
+$$ T= t(\theta _0 \rightarrow 0 \rightarrow -\theta_0 \rightarrow 0 \rightarrow \theta_0),$$
+o dos veces un medio ciclo,
+$$ T= 2t(\theta _0 \rightarrow 0 \rightarrow -\theta_0),$$
+o cuatro veces un cuarto de ciclo,
+$$ T= 2t(\theta _0 \rightarrow 0),$$
+que nos lleva a
+$$T= 4 \sqrt{\frac{l}{2g}} \int ^{\theta _0} _0 \frac{1}{\sqrt{\cos\theta - \cos\theta_0}} d\theta.$$
+Nótese que esta integral diverge como $\theta_0$ se aproxime a la vertical. Así, con la energía adecuada, un péndulo en su máximo podría tomar un tiempo arbitrariamente largo para caer.\\ \\
+Para resolver numericamente esta integral se utiliza \textit{Scipy.integrate.quad} para integrales definidas de la biblioteca de funciones \textit{Scipy.integrate} en Python. Para mostrar que la integral diverge cuando el ángulo inicial tiene a $\pi$ se resuelve la integral desde cero hasta $\pi$. Los resultados se comparan con el periodo de la aproximación a ángulos pequeños.
 
 \section*{Código}
 
