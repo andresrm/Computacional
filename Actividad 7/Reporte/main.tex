@@ -49,7 +49,11 @@ literate=
 \rule{\textwidth}{1pt}
 \end{center}
 
-$$\alpha$$
+\section*{Introducción}
+
+El espacio fase de un sistema dinámico es un espacio en el cual todos los posibles estados del sistema son representados, con cada estado correspondiendo a un punto único en el espacio fase. Para sistemas mecánicos, como el péndulo, el espacio fase consiste en todos los valores posibles de las variables de momento y posición.\\ \\
+Las trayectorias en el espacio fase representa el conjunto de estados compatible con cualquier condición inicial. El diagrama del espacio fase representa todo lo que el sistema puede ser, y su forma puede facilmente elucidar cualidades del sistema que no son triviales. \\ \\
+En mecánica clásica, cada coordenada generalizada para la posición define a un momendo generalizado, que en conjunto definen las coordenadas del espacio fase. En este proyecto se resuelve nuevamente la ecuación del péndulo mediante la herramienta herramienta de la librería Scipy, \textit{integrate.odeint}. Ahora se grafican del vector resultante de la integración las variables que corresponden a la velocidad angular $\omega$ y la posición angular $\theta$, siendo $\theta$ la coordenada generalizada del sistema y $\omega$ su conjugado, para simular el espacio fase del péndulo.
 
 \section*{Código}
 
@@ -129,7 +133,7 @@ DX= pend([X1, Y1],t)                      # compute growth rate on the gridt
 lw= 0.1*y/x
 
 
-Q = plt.quiver(X1, Y1, DX[0], DX[1], DX, pivot='mid', cmap=plt.cm.cool, linewidth=lw)
+Q = plt.quiver(X1,Y1,DX[0],DX[1],DX,pivot='mid',cmap=plt.cm.cool,linewidth=lw)
 
 p.title('Trayectorias y direcciones del campo')
 p.xlabel('$\Theta$')
