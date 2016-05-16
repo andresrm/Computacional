@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1463364217 "main.tex" "main.pdf" "main" 1463364218
+["pdflatex"] 1463382094 "main.tex" "main.pdf" "main" 1463382094
   "/etc/texmf/web2c/texmf.cnf" 1461061454 1101 af7716885e081ab43982cab7b4672c1a ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1272929888 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm" 1136768653 1328 c834bbb027764024c09d3d2bf908b5f0 ""
@@ -71,12 +71,12 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1435377840 31349 7675f8adfbe12aae865d340d35423a49 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1461061951 1830106 84d76edbb610990cc412e8c14df69a68 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1461061635 3845217 fad05ee70c155a7563e433d84deb36c9 ""
-  "main.aux" 1463364218 406 73d9ae872e65cf55b9599bd2517ba9cd ""
-  "main.tex" 1463364167 4455 7e1499b1bf56c21ec0b040cd69a8c46c ""
-  "plot.png" 1463361730 14225 2e54ff58e2eb57bd9ebe776800a9444d ""
-  "plot2.png" 1463361730 13179 06c2e136278aa593dd0a55e0495b11cb ""
-  "uni.png" 1463361731 136608 01c482412cb6c2ba8c5ee2a54b57e828 ""
+  "main.aux" 1463382094 406 73d9ae872e65cf55b9599bd2517ba9cd ""
+  "main.tex" 1463382086 4555 cfea6be34752de30134d0147cd0c7057 ""
+  "plot.png" 1463381990 14225 2e54ff58e2eb57bd9ebe776800a9444d ""
+  "plot2.png" 1463381989 13179 06c2e136278aa593dd0a55e0495b11cb ""
+  "uni.png" 1463381990 136608 01c482412cb6c2ba8c5ee2a54b57e828 ""
   (generated)
+  "main.aux"
   "main.log"
   "main.pdf"
-  "main.aux"
