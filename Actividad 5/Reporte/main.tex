@@ -49,8 +49,14 @@ literate=
 \rule{\textwidth}{1pt}
 \end{center}
 
-$$\alpha$$
-
+\section*{Introducción}
+El ``péndulo simple'' es una idealización de un ``péndulo real'' en un sistema aislado usando los siguientes supuestos:se considera una cuerda sin masa, inextensible y siempre tensa, el objeto es una masa puntual, el movimiento ocurre en dos dimensiones, se desprecia fricción o resistencia al aire, el campo gravitacional es uniforme, y el soporte está fijo.\\ \\
+La ecuación diferencial que representa el movimiento de un péndulo simple es
+\begin{equation}
+\frac{d^2\theta}{dt^2} + \frac{g}{l} \sin \theta = 0
+\end{equation}
+donde g es la aceleración debido a la gravedad, $l$ es la longitud de la cuerda, y $\theta$ es el desplazamiento angular.\\ \\
+En este proyecto se resuelve numericamente la ecuación del péndulo. La herramienta \textit{scipy.integrate.odeint} de \textit{SciPy} integra un sistema de ecuaciones diferenciales usando \textit{lsoda} de la librería \textit{Odepack} de Fortran. Se grafican los resultados utilizando la librería \textit{matplotlib.pyplot}, una colección de funciones con estilo de comando que hace a \textit{matplot} trabajar como Matlab.
 \section*{Código}
 
 \begin{lstlisting} % Start your code-block}
