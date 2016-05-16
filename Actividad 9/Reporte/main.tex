@@ -9,6 +9,7 @@
 \usepackage{wrapfig}
 
 
+
 \renewcommand\lstlistingname{Código}
 \lstset{language=Python}
 \marginsize{1cm}{1cm}{2cm}{2cm}
@@ -50,7 +51,23 @@ literate=
 \rule{\textwidth}{1pt}
 \end{center}
 
-$$\alpha$$
+\section*{Introducción}
+
+En la actividad 6 se resolvió numericamente la integral del periodo para cualquier ángulo inicial del péndulo:
+$$T= 4 \sqrt{\frac{l}{2g}} \int ^{\theta _0} _0 \frac{1}{\sqrt{\cos\theta - \cos\theta_0}} d\theta.$$
+Esta integral se puede reescribir en términos de una integral elíptica como
+$$T=a \sqrt{\frac{l}{g}} F \left( \theta_0 / 2 , \csc \frac{\theta _ 0 }{2} \right) \csc \frac{\theta_0}{2} $$
+donde $F$ es la integral elíptica incompleta de primer tipo, defnida por
+$$F(\phi,k) = \int ^{\phi} _0  \frac{1}{\sqrt{1-k^2 \sin ^ 2 u }} du.$$
+Más concisamente por la sustitución $\sin u = \sin (\theta/2) / (\sin (\theta_0 / 2)$  expresando $\theta$ en términos de $u$,
+$$T = 4\sqrt{\frac{l}{g}} K \left( \sin ^ 2 \frac{\theta _ 0 }{2}  \right)$$
+donde $K$ es una integral completa de primer tipo definida por
+$$K(k) = F(\pi /2,k) = \int ^{\pi/2} _ 0 \frac{1}{\sqrt{1-k^2 \sin^2 u}} du .$$
+La solución a la integral elíptica son los polinomios de Legendre y el periodo del péndulo es
+$$T = 2 \pi \sqrt{\frac{l}{g}} \sum\limits_{n=0}^{\infty} \left[ \left( \frac{(2n)!}{(2^n \cdot n!)^2 } \right)^2  \cdot \sin ^{2n} \left( \frac{\theta_0}{2} \right) \right]$$
+En esta práctica se calculan los coeficientes de esta serie y se compara en las gráficas el valor de la integral con la aproximación en distintos órdenes del polinomio. Se muestra que también puede encontrarse la solución mediante la serie de Maclaurin
+$$\sin \frac{\theta_0}{2} = \frac{1}{2} \theta_0 - \frac{1}{48} \theta ^3 + \frac{1}{3840} \theta_0 ^5 - \frac{1}{645120} \theta _0 ^7 + \cdots $$
+sustituyendo esta serie en los polinomios de Legendre.
 
 \section*{Código}
 
